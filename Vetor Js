@@ -1,0 +1,55 @@
+Para preencher um vetor com dados de um formulário em HTML usando JavaScript, 
+você precisa primeiro acessar os valores dos campos do formulário e, em seguida, 
+armazená-los no vetor. Aqui está um exemplo de como fazer isso:
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preencher Vetor com Dados do Formulário</title>
+</head>
+<body>
+
+<form id="meuForm">
+  <label for="nome">Nome:</label>
+  <input type="text" id="nome" name="nome"><br><br>
+  
+  <label for="idade">Idade:</label>
+  <input type="number" id="idade" name="idade"><br><br>
+  
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  
+  <button type="button" onclick="preencherVetor()">Enviar</button>
+</form>
+
+<script>
+function preencherVetor() {
+  let vetor = [];
+
+  // Acessando os valores dos campos do formulário
+  let nome = document.getElementById("nome").value;
+  let idade = document.getElementById("idade").value;
+  let email = document.getElementById("email").value;
+
+  // Armazenando os valores no vetor
+  vetor.push(nome);
+  vetor.push(idade);
+  vetor.push(email);
+
+
+
+
+  // Exibindo o vetor preenchido
+  console.log("Vetor preenchido:", vetor);
+}
+</script>
+
+</body>
+</html>
+Neste exemplo, temos um formulário simples com campos para nome, idade e email. Quando o botão "Enviar" é clicado, a função preencherVetor() é chamada. Dentro dessa função, os valores dos campos do formulário são acessados usando document.getElementById() e armazenados no vetor usando o método push(). Finalmente, o vetor preenchido é exibido no console.
+
+Este é um exemplo básico para ilustrar o processo de preenchimento de um vetor com dados de um formulário em HTML usando JavaScript. Você pode adaptar e expandir este código de acordo com suas necessidades específicas.
