@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Controle de Finanças Pessoais</title>
+    <link rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+    <h1>App de Finanças Pessoais</h1>
+    <div>
+        <input type="number" id="valor" placeholder="Valor">
+        <input type="text" id="descricao" placeholder="Descrição">
+        <select id="tipo">
+            <option value="receita">Receita</option>
+            <option value="despesa">Despesa</option>
+        </select>
+        <select id="categoria">
+            <option value="alimentacao">Alimentação</option>
+            <option value="lazer">Lazer</option>
+            <option value="moradia">Moradia</option>
+            <option value="saude">Saude</option>
+        </select>
+        <button id="adicionar">Adicionar Transação</button>
+    </div>
+    <div id="relatorios">
+        <button id="gerarRelatorio">Gerar Relatório</button>
+    </div>
+    <div id="relatorioResultados">
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>
