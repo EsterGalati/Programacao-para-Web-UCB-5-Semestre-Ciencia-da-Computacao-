@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média de Alunos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Calculadora de Média de Alunos</h1>
+    <div id="formulario">
+        <label for="nome">Nome do Aluno:</label>
+        <input type="text" id="nome" placeholder="Nome">
+        <label for="nota1">Nota 1:</label>
+        <input type="number" id="nota1" placeholder="Nota 1">
+        <label for="nota2">Nota 2:</label>
+        <input type="number" id="nota2" placeholder="Nota 2">
+        <button onclick="adicionarAluno()">Adicionar Aluno</button>
+    </div>
+    <div id="resultados">
+        <h2>Resultados:</h2>
+        <p>Maior Média da Turma: <span id="maiorMedia">-</span></p>
+        <p>Média da Turma: <span id="mediaTurma">-</span></p>
+        <ul id="listaAlunos"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
